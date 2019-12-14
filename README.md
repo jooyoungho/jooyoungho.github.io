@@ -1,3 +1,3 @@
 # jooyoungho.github.io
-Joo Youngho<br>
-creative@yonsei.ac.kr
+Joo Youngho | creative@yonsei.ac.kr<br>
+[jooyoungho.github.io](jooyoungho.github.io)
