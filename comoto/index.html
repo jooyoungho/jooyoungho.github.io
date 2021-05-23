@@ -169,23 +169,23 @@
         <p class="sub">▲ 데이터와 상관없이, View만 약 1주 동안 개발&테스트..</p><br>
         <p class="date">차트의 경우는 <a style="text-decoration: underline;" href="https://github.com/danielgindi/Charts" target="_blank">Charts</a>라는 라이브러리를, 대부분의 디자인은 SwiftUI의 기본 디자인(InsetGroupedListStyle)을 최대한 활용하였습니다. 저는 디자인 전공이지만, 제가 아무리 멋지게 만들어도 애플의 기본 디자인보다 더 나을 것이란 확신이 없었거든요. 그리고 기본 디자인을 활용하면 다크 모드도 알아서 지원해 주니 제 입장에서는 안 쓸 이유가 없었습니다.</p>
         <br>
-        <img src="4.png" style="width:650px">
+        <img src="4.png" class="img"  style="width:650px">
         <p class="sub">▲ SwiftUI로 후다닥 완성시킨 View</p><br>
         <p class="date">View는 얼추 되었고, 이제 차곡차곡 쌓은 데이터를 연동하는 일만 남았습니다. 올바른 방법인지는 모르겠지만, DataCenter라는 클래스를 만들어서 Firebase에서 데이터를 가져오고, @Published 변수에 저장을 했습니다. 이 클래스는 EnvironmentObject로 지정해서 모든 뷰에서 바로 데이터를 가져올 수 있도록 말이죠. (SwiftUI 만세!)</p><br>
         <b>데이터베이스의 저장되는 컬렉션은 각 코인의 시세 정보, 유저의 정보(코인 구매 로그, Uid, 즐겨찾기 목록 등), 랭킹 등으로 나누어서 분리를 했습니다.</b><br><br>
         <p class="date">제가 간단하게 말하긴 했지만, 이 부분만 거의 1주는 걸렸습니다. 그리고 다음 난관은..</p><br>
-        <img src="memo.jpg" style="width:250px">
+        <img src="memo.jpg" class="img"  style="width:250px">
         <p class="sub">▲ 수익률 계산.. </p><br>
         <p class="date">수익률 계산하는 게 생각보다 머리 아팠습니다. 샀던 시점의 시세를 현재 시세와 비교를 하면 되긴 하는데, 중간에 일부를 팔거나 살 때 어떤 데이터가 필요한지..전체 평균을 어떻게 낼지.. 내가 수학을 잘했다면 금방 끝났을 텐데, 하는 아쉬움이 있었습니다. 어쨌든 무사히 수익률 계산도 마친 뒤엔, 코인 로고 에셋을 저장하는 등의 단순 반복 업무가 남았는데.. 이 부분은 노가다를 할까 하다가 Python으로 에셋 폴더를 만드는 것으로 금방 끝냈습니다. 단순 반복 업무는 분명 자동화의 여지가 있을 테니까요. 아마도?</p><br>
-        <img src="python.png" style="width:450px">
+        <img src="python.png" class="img"  style="width:450px">
         <p class="sub">▲ Python으로 만든 Images Asset JSON 생성 코드</p><br>
         <p class="date">이제 남은 건 심사뿐입니다. 배포하니 애플에서 앱에 대해 자세히 설명하라고 하더군요.. 아무래도 암호화폐 관련된 앱은 조금 심사 조건이 까다로운 모양입니다. 번역기를 활용해서 열심히 앱에 대한 설명을 하고, 심사를 통과하여 앱을 릴리즈 했습니다!</p><br><br>
         
-        <img src="3.gif" style="width:650px">
+        <img src="3.gif" class="img"  style="width:650px">
         <p class="sub">▲ 완성된 앱의 작동 화면 일부</p><br>
-        <img src="5.png" style="width:650px">
+        <img src="5.png" class="img"  style="width:650px">
         <p class="sub">▲ 참고로 한국과 미국은 문화의 차이로 색의 의미가 다릅니다. 한국은 빨강이 올랐을 때의 색으로 쓰이지만, 미국은 빨강이 안 좋은 의미를 가져서 내려가는 색으로 사용되거든요. 당장의 애플 주식 앱만 해도 그렇습니다.</p><br>
-        <img src="6.png" style="width:650px">
+        <img src="6.png" class="img"  style="width:650px">
         <p class="sub">▲ 다크모드에서의 앱 화면</p><br>
         <p class="date">3주 동안의 퇴근 후 시간과 주말을 희생해서 만든 앱은 많은 것을 배우게 해줬습니다. 조금 정리해보면..
             <b><br>1. 기존에 나와있는 개발 플랫폼, API를 활용하자
