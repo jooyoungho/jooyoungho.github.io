@@ -1,0 +1,27 @@
+<html>
+
+<head>
+</head>
+
+<body>
+<textarea placeholder="알파벳 입력" id="input"></textarea><br><br>
+    <a id="cov">숫자 변환!</a><br><br>
+<textarea id="res"></textarea>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        
+    $(function(){
+        
+        $("#cov").click(function(){
+            let html = "";
+            for (s of $("#input").val()) {
+             html += s.charCodeAt(0) - 97;
+            }
+            $("#res").val(html);
+        });
+        
+    });
+    </script>
+</body>
+
+</html>
